@@ -1,0 +1,10 @@
+beans\Articulo.class
+control\tienda.class
+util\prueba1.class
+beans\Compra.class
+beans\Subcategoria.class
+beans\Categoria.class
+util\SQLConexion.class
+dao\Negocio.class
+util\MySQLConexion.class
+beans\Cliente.class

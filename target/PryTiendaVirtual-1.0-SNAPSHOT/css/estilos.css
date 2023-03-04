@@ -1,0 +1,131 @@
+/*///////////////cartel/////////*/
+.cartel{  
+    height: 89.5vh;
+    display: flex;
+}
+.gallery__img{
+    width: 80px;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: flex .5s;
+    flex: 1;
+    display: grid;  
+}
+.gallery__img:nth-child(1){
+    background-image: url('../images/cartel2.jpg');
+}
+.gallery__img:nth-child(2){
+    background-image: url('../images/cartel1.webp');
+}
+.gallery__img:nth-child(3){
+    background-image: url('../images/cartel3.jpg');
+}
+.gallery__img:nth-child(4){
+    background-image: url('../images/cartel4.webp');
+}
+
+#progress-bar {
+  width: 100%;
+  height: 7px;
+}
+#fill {
+  width: 0%;
+  height: 100%;
+  background-color: #000000;
+  transition: 25ms;
+}
+/*//////////////REGISTRO//////////////////////*/
+.detalle-title{
+    font-size: 36px;
+    font-family: georgia;
+    font-weight: bold;
+    font-style: italic;
+}
+.detalle-precio{
+    color: red;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: helvetica;
+}
+.boxtalla span{
+  display: block;
+  margin-bottom: 20px;
+}
+
+.labeltalla{
+  padding: 6px 30px;
+  border-radius: 20px;
+  border: 2px solid #ccc;
+}
+
+.boxtalla input:checked + label{
+  background: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.boxtalla input{
+  display: none;
+  
+}
+.container{
+    max-width: 100%;
+    display: grid;
+    margin: 1rem 0;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    gap: 20px 0;
+}
+.new-products {  
+   width: 240px;
+   overflow: hidden;
+   border-radius: 1em;
+   transform: scale(0.95);
+   transition: box-shadow 0.5s, transform 0.5s;
+}
+.new-products:hover {
+   transform: scale(1.1); /*Tamaño box*/
+   box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+.new-products:hover .material-icons{
+    opacity: 1;
+}
+.material-icons{
+   position: relative;
+   left: 25%;
+   bottom: 10px;
+   opacity: 0;
+}
+.material-icons span{
+    border-radius: 50px;
+    background-color: #ffffff;
+    padding: 6px;
+    cursor: pointer;
+    color: #000000;
+    font-size: 21px;
+}
+.material-icons span:hover{
+    background-color: red;
+    color: #ffffff;
+}
+
+.size-img{
+   height: 250px;
+   width: 100%;
+}
+
+.contenedor-sub{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.right{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    
+}
+.box-sub:nth-child(n+7){
+    height: 0;
+    overflow: hidden;
+}
